@@ -11,10 +11,13 @@ MyCache::~MyCache()
 
 void MyCache::AddEntry(const CacheData& cd)
 {
-//    SubType::LinkedList* ll;
-    //SubType::NodeContent nc;
-    //m_Cache.insert(cd.category, std::make_pair(cd.subType, ll));
-    //std::map<std::string, std::map<std::string, int>>
+    if (m_Cache.find(cd.category) == m_Cache.end()) {
+        std::cout << "Key does'n exist" << std::endl;
+    } else {
+        std::cout << "Key does exist" << std::endl;
+    }
+
+
     std::list<SubType::NodeContent> lnc;
     lnc.push_back(cd.nc); 
     std::pair<std::string, std::list<SubType::NodeContent>>temp{cd.subType, lnc}; 
