@@ -45,13 +45,13 @@ int main()
         std::cout << val << std::endl;
     }
 
-//    std::cout << std::endl << std::string{"//****** Nodes ******//"} << std::endl; 
-//   std::vector<std::string> nodes{};
-//    cache.GetNodesFromSubCategory(nodes, "AI", "Temperature");
-//   for(auto const& val : nodes)
-//    {
-//        std::cout << val << std::endl;
-//    }
+    std::cout << std::endl << std::string{"//****** Nodes in AI/Temp ******//"} << std::endl; 
+    std::vector<std::string> nodes{};
+    cache.GetNodesFromSubCategory(nodes, "AI", "Temperature");
+    for(auto const& val : nodes)
+    {
+        std::cout << val << std::endl;
+    }
    
     return 0;
 }
