@@ -37,7 +37,7 @@ int main()
         std::cout << val << std::endl;
     }
 
-    std::cout << std::endl << std::string{"//****** SUBKEYS ******//"} << std::endl; 
+    std::cout << std::endl << std::string{"//****** SUBKEYS in AI ******//"} << std::endl; 
     std::vector<std::string> subkeys{};
     cache.GetKeysFromSubCategory(subkeys, "AI");
     for(auto const& val : subkeys)
