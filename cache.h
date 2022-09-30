@@ -19,8 +19,6 @@ namespace Cache
     class MyCache
     {
         private:
-            /*Category, vector of subs*/ 
-            //std::map<std::string, std::map<std::string, SubType::LinkedList>> m_Cache;     
             std::map<std::string, std::map<std::string, std::list<SubType::NodeContent>>> m_Cache;      
         public:
             MyCache(/* args */);
